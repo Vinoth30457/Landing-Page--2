@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Russo+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+:root {
+  --belanosima-font-family: "Belanosima", sans-serif;
+  --russo-font-family: "Russo One", sans-serif;
+  --titillium-font-family: "Titillium Web", sans-serif;
+  --clr-orange: #ff7d1a;
+  --clr-black: #1d2025;
+  --clr-light: #ffede0;
+}
+
+/* global css */
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* customize */
+  background-color: #1c2042;
+  color: white;
+  border: 2px solid #1c2042;
+}
+header {
+  width: 75%;
+  height: 6rem;
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-between;
+  margin-top: -1rem;
+  border-bottom: 1px solid grey;
+}
+.head-left {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+.link-container {
+  display: flex;
+  gap: 3rem;
+}
+.link {
+  color: gray;
+  font-weight: 400;
+}
+.logo {
+  font-family: var(--titillium-font-family);
+  font-size: 2.25rem;
+}
+.head-right {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.profile {
+  width: 3rem;
+}
+.cart-icon {
+  color: gray;
+  font-size: 1.25rem;
+}
+.left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-img-container {
+  width: 30rem;
+  border-radius: 15px;
+}
+.main-img {
+  border-radius: 15px;
+}
+.container {
+  display: flex;
+}
+.view-container {
+  display: flex;
+  gap: 2rem;
+}
+.img {
+  width: 12rem;
+  /* height: 10rem; */
+}
+.img {
+  width: 6rem;
+}
+.image {
+  width: 6rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.left-container,
+.right-container {
+  width: 40%;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+}
+.img-border {
+  border: 3px solid var(--clr-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.img-1,
+.img-2 {
+  opacity: 50%;
+  width: 6rem;
+}
+.right-container {
+  width: 40%;
+}
+.title-1 {
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #ff7d1a;
+  font-size: 1.15rem;
+}
+.title-2 {
+  font-size: 2.75rem;
+  color: var(--clr-black);
+}
+.description {
+  color: gray;
+  line-height: 2;
+  text-align: justify;
+  font-weight: 500;
+}
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.discount {
+  font-size: 1rem;
+  color: #ff7d1a;
+  background-color: var(--clr-light);
+  padding: 5px;
+  border-radius: 3px;
+}
+.price-strike {
+  font-size: 1rem;
+  font-weight: 700;
+  color: gray;
+  margin-top: 0.75rem;
+}
+.cart-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+.count {
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 2rem;
+}
+.orange-txt {
+  color: #ff7d1a;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+.btn-cart {
+  background-color: #ff7d1a;
+  border: none;
+  padding: 1rem 4rem;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 991px) {
+}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {
+}
